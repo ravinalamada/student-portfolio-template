@@ -1,0 +1,31 @@
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  color: #828282;
+  margin: 16px;
+  background-color: #272343;
+  // overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
