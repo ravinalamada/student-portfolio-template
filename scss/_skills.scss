@@ -6,11 +6,11 @@
   padding-top: 32px;
   padding-bottom: 32px;
   margin-top: 32px;
-  max-width: max-content;
 }
 
-.list {
-  max-width: max-content;
+.nav,
+.container {
+  margin-right: 16px;
 }
 
 .list__item {
@@ -20,4 +20,5 @@
 
 .list__span {
   margin-right: 30px;
+  margin-bottom: 16px;
 }

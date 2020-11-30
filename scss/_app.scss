@@ -1,6 +1,23 @@
-.App {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  // grid-template-rows: repeat(2, fr);
-  column-gap: 16px;
+h2,
+h3 {
+  margin-block-start: 0;
+  margin-bottom: 32px;
+  color: #004643;
+}
+
+@media(min-width: 1000px) {
+
+  .App {
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 40px;
+
+    &--wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
 }

@@ -1,10 +1,11 @@
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   color: #828282;
   margin: 16px;
   background-color: #272343;
+  overflow-x: hidden;
 }
 
 * {
@@ -29,12 +30,27 @@ li {
   list-style: none;
 }
 
-.App {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  column-gap: 16px;
+h2,
+h3 {
+  margin-block-start: 0;
+  margin-bottom: 32px;
+  color: #004643;
 }
 
+@media (min-width: 1000px) {
+  .App {
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 40px;
+  }
+  .App--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
 .header {
   background: #FFFFFF;
   border-radius: 12px;
@@ -77,11 +93,11 @@ li {
   padding-top: 32px;
   padding-bottom: 32px;
   margin-top: 32px;
-  max-width: max-content;
 }
 
-.list {
-  max-width: max-content;
+.nav,
+.container {
+  margin-right: 16px;
 }
 
 .list__item {
@@ -91,11 +107,11 @@ li {
 
 .list__span {
   margin-right: 30px;
+  margin-bottom: 16px;
 }
 
 .nav,
 .item {
-  width: 100%;
   background: #fffffe;
   border-radius: 12px;
   padding: 32px;
@@ -104,7 +120,7 @@ li {
 
 .item {
   display: grid;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 20% 1fr;
   gap: 40px;
 }
 
@@ -132,6 +148,15 @@ li {
 
 .projects__link:nth-of-type(1) {
   margin-right: 40px;
+}
+
+.lists--container,
+.list--projects {
+  margin-right: 16px;
+}
+
+.link--container {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=/scss.6b84482b.css.map */

@@ -28,7 +28,7 @@ const Project = [
   },
   {
     id: '3',
-    title:"the Creativity crew",
+    title:"The Creativity crew",
     demo:"https://wizardly-beaver-3a02b2.netlify.app/",
     code: '',
     image: Creativity,

@@ -24,18 +24,19 @@ function Projects() {
     <Switch>
       <ul className="lists--container">
         <Route exact path="/">
-        {fielteredHtml.map(item => (
-          <li key={item.id} className="item">
-          <img className='projects--img' src={item.image} alt={item.title} />
-          <div>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <div>
-              <a className="projects__link" src={item.demo}>Demo</a>
-              <a className="projects__link" src="">Code</a>
-            </div>
-          </div>
-          </li>))}
+            {fielteredHtml.map(item => (
+              <li key={item.id} className="item">
+              <img className='projects--img' src={item.image} alt={item.title} />
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <div className="link--container">
+                  <a className="projects__link" href={item.demo}>Demo</a>
+                  <a className="projects__link" href="">Code</a>
+                </div>
+              </div>
+              </li>
+            ))}
           </Route>
           <Route exact path="/js">
               {fielteredJs.map(item => (
@@ -45,8 +46,8 @@ function Projects() {
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
                     <div>
-                      <a className="projects__link" src={item.demo}>Demo</a>
-                      <a className="projects__link" src="">Code</a>
+                      <a className="projects__link" href={item.demo}>Demo</a>
+                      <a className="projects__link" href="">Code</a>
                     </div>
                   </div>
                 </li>
@@ -60,8 +61,8 @@ function Projects() {
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <div>
-                    <a className="projects__link" src={item.demo}>Demo</a>
-                    <a className="projects__link" src="">Code</a>
+                    <a className="projects__link" href={item.demo}>Demo</a>
+                    <a className="projects__link" href="">Code</a>
                   </div>
                 </div>
               </li>

@@ -34110,7 +34110,7 @@ var Project = [{
   type: 'react'
 }, {
   id: '3',
-  title: "the Creativity crew",
+  title: "The Creativity crew",
   demo: "https://wizardly-beaver-3a02b2.netlify.app/",
   code: '',
   image: _creativity.default,
@@ -34215,12 +34215,14 @@ function Projects() {
       className: "projects--img",
       src: item.image,
       alt: item.title
-    }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("p", null, item.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
+    }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("p", null, item.description), /*#__PURE__*/_react.default.createElement("div", {
+      className: "link--container"
+    }, /*#__PURE__*/_react.default.createElement("a", {
       className: "projects__link",
-      src: item.demo
+      href: item.demo
     }, "Demo"), /*#__PURE__*/_react.default.createElement("a", {
       className: "projects__link",
-      src: ""
+      href: ""
     }, "Code"))));
   })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
@@ -34235,10 +34237,10 @@ function Projects() {
       alt: item.title
     }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("p", null, item.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
       className: "projects__link",
-      src: item.demo
+      href: item.demo
     }, "Demo"), /*#__PURE__*/_react.default.createElement("a", {
       className: "projects__link",
-      src: ""
+      href: ""
     }, "Code"))));
   })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
@@ -34253,10 +34255,10 @@ function Projects() {
       alt: item.title
     }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("p", null, item.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
       className: "projects__link",
-      src: item.demo
+      href: item.demo
     }, "Demo"), /*#__PURE__*/_react.default.createElement("a", {
       className: "projects__link",
-      src: ""
+      href: ""
     }, "Code"))));
   })))));
 }
@@ -34339,7 +34341,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49689" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60233" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
