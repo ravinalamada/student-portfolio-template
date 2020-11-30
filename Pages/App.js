@@ -7,13 +7,13 @@ import Projects from '../Components/Projects';
 
 function App() {
   return (
-    <main className="main">
-      <section>
+    <main className="App">
+      <section className="App--container">
         <About />
         <Hobbies />
       </section>
-      <section>
-        <div>
+      <section className="App--container">
+        <div className="App--wrapper">
           <Skills />
           <Design />
         </div>

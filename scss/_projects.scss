@@ -7,15 +7,43 @@
   margin-top: 30px;
 }
 
-.lists--container {
+.item {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, fr);
-  column-gap: 16px;
+  grid-template-columns: 25% 1fr;
+  gap: 40px;
 }
+
+// .lists--container {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-template-rows: repeat(2, fr);
+//   column-gap: 16px;
+// }
 
 .list--projects {
     width: 30%;
     display: flex;
     justify-content: space-between;
 }
+
+.projects__link {
+  border: 1px solid #5C94E1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding-top: 13px;
+  padding-left: 40px;
+  padding-bottom: 11px;
+  padding-right: 38px;
+}
+
+.projects__link:active,
+.projects__link:hover {
+  color: #fffffe;
+  background-color: #5C94E1;
+}
+
+.projects__link:nth-of-type(1) {
+  margin-right: 40px;
+}
+
+

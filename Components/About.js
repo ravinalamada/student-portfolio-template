@@ -1,5 +1,5 @@
 import React from 'react';
-import MyProfile from '../images/Profile-resized.png';
+import MyProfile from '../images/profile-sm.png';
 import EmailIcon from '../icons/email-icon.svg';
 import CallIcon from '../icons/call-icon.svg';
 

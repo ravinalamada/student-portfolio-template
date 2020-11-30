@@ -13,6 +13,7 @@
 
   &__link {
     font-weight: 500;
+    font-size: 14px;
     color: #4F4F4F;
     padding-left: 30px;
   }
@@ -34,23 +35,25 @@
 
   .header {
 
-    &--container,
-    &__section--wrapper {
-      display: flex;
-      justify-content: space-between ;
-      flex-direction: row;
-    }
+    // &__section--wrapper {
+    //   display: flex;
+    //   justify-content: space-between ;
+    //   flex-direction: row;
+    // }
+
+    // &--container{
+    //   display: grid;
+    //   grid-template-columns: 25% 1fr;
+    //   gap: 40px;
+    // }
 
     &__section--wrapper {
       margin-bottom: 60px;
     }
 
     &--img {
-      width: 30%;
+      width: 100%;
     }
 
-    &__section--container {
-      width: 65%;
-    }
   }
 }

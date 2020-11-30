@@ -29772,8 +29772,8 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"images/Profile-resized.png":[function(require,module,exports) {
-module.exports = "/Profile-resized.ca62fb5e.png";
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"images/profile-sm.png":[function(require,module,exports) {
+module.exports = "/profile-sm.149be1e5.png";
 },{}],"icons/email-icon.svg":[function(require,module,exports) {
 module.exports = "/email-icon.2cb9b3c9.svg";
 },{}],"icons/call-icon.svg":[function(require,module,exports) {
@@ -29788,7 +29788,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _ProfileResized = _interopRequireDefault(require("../images/Profile-resized.png"));
+var _profileSm = _interopRequireDefault(require("../images/profile-sm.png"));
 
 var _emailIcon = _interopRequireDefault(require("../icons/email-icon.svg"));
 
@@ -29802,7 +29802,7 @@ function About() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "header--container"
   }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _ProfileResized.default,
+    src: _profileSm.default,
     className: "header--img",
     alt: "profile"
   }), /*#__PURE__*/_react.default.createElement("section", {
@@ -29842,7 +29842,7 @@ function About() {
 
 var _default = About;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../images/Profile-resized.png":"images/Profile-resized.png","../icons/email-icon.svg":"icons/email-icon.svg","../icons/call-icon.svg":"icons/call-icon.svg"}],"Components/Skills.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../images/profile-sm.png":"images/profile-sm.png","../icons/email-icon.svg":"icons/email-icon.svg","../icons/call-icon.svg":"icons/call-icon.svg"}],"Components/Skills.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34194,10 +34194,13 @@ function Projects() {
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Projects"), /*#__PURE__*/_react.default.createElement("ul", {
     className: "list--projects"
   }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "projects__link",
     to: "/"
   }, "Responsive")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "projects__link",
     to: "/js"
   }, "Js")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "projects__link",
     to: "/react"
   }, "React")))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement("ul", {
     className: "lists--container"
@@ -34209,11 +34212,14 @@ function Projects() {
       key: item.id,
       className: "item"
     }, /*#__PURE__*/_react.default.createElement("img", {
+      className: "projects--img",
       src: item.image,
       alt: item.title
     }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("p", null, item.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
+      className: "projects__link",
       src: item.demo
     }, "Demo"), /*#__PURE__*/_react.default.createElement("a", {
+      className: "projects__link",
       src: ""
     }, "Code"))));
   })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
@@ -34224,11 +34230,14 @@ function Projects() {
       key: item.id,
       className: "item"
     }, /*#__PURE__*/_react.default.createElement("img", {
+      className: "projects--img",
       src: item.image,
       alt: item.title
     }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("p", null, item.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
+      className: "projects__link",
       src: item.demo
     }, "Demo"), /*#__PURE__*/_react.default.createElement("a", {
+      className: "projects__link",
       src: ""
     }, "Code"))));
   })), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
@@ -34239,11 +34248,14 @@ function Projects() {
       key: item.id,
       className: "item"
     }, /*#__PURE__*/_react.default.createElement("img", {
+      className: "projects--img",
       src: item.image,
       alt: item.title
     }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("p", null, item.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
+      className: "projects__link",
       src: item.demo
     }, "Demo"), /*#__PURE__*/_react.default.createElement("a", {
+      className: "projects__link",
       src: ""
     }, "Code"))));
   })))));
@@ -34275,8 +34287,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function App() {
   return /*#__PURE__*/_react.default.createElement("main", {
-    className: "main"
-  }, /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement(_About.default, null), /*#__PURE__*/_react.default.createElement(_Hobbies.default, null)), /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Skills.default, null), /*#__PURE__*/_react.default.createElement(_Design.default, null)), /*#__PURE__*/_react.default.createElement(_Projects.default, null)));
+    className: "App"
+  }, /*#__PURE__*/_react.default.createElement("section", {
+    className: "App--container"
+  }, /*#__PURE__*/_react.default.createElement(_About.default, null), /*#__PURE__*/_react.default.createElement(_Hobbies.default, null)), /*#__PURE__*/_react.default.createElement("section", {
+    className: "App--container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "App--wrapper"
+  }, /*#__PURE__*/_react.default.createElement(_Skills.default, null), /*#__PURE__*/_react.default.createElement(_Design.default, null)), /*#__PURE__*/_react.default.createElement(_Projects.default, null)));
 }
 
 var _default = App;
@@ -34321,7 +34339,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50146" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49689" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
