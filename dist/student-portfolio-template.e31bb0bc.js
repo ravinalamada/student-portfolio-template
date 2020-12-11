@@ -34056,14 +34056,8 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"images/movie-list.png":[function(require,module,exports) {
-module.exports = "/movie-list.12351ca9.png";
-},{}],"images/tea-time-topic.png":[function(require,module,exports) {
-module.exports = "/tea-time-topic.058851d1.png";
-},{}],"images/creativity.png":[function(require,module,exports) {
-module.exports = "/creativity.f525264e.png";
-},{}],"images/game-landing.png":[function(require,module,exports) {
-module.exports = "/game-landing.f7f8c1be.png";
+},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"images/birthday-reminder.png":[function(require,module,exports) {
+module.exports = "/birthday-reminder.a2d097c4.png";
 },{}],"images/photograph.png":[function(require,module,exports) {
 module.exports = "/photograph.f26d0e70.png";
 },{}],"images/sport-app.png":[function(require,module,exports) {
@@ -34078,13 +34072,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _movieList = _interopRequireDefault(require("./images/movie-list.png"));
-
-var _teaTimeTopic = _interopRequireDefault(require("./images/tea-time-topic.png"));
-
-var _creativity = _interopRequireDefault(require("./images/creativity.png"));
-
-var _gameLanding = _interopRequireDefault(require("./images/game-landing.png"));
+var _birthdayReminder = _interopRequireDefault(require("./images/birthday-reminder.png"));
 
 var _photograph = _interopRequireDefault(require("./images/photograph.png"));
 
@@ -34094,54 +34082,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Project = [{
   id: '1',
-  title: "Tea time topic",
-  demo: "https://eloquent-murdock-a443bb.netlify.app/",
-  code: '',
-  image: _teaTimeTopic.default,
-  description: 'It is a website which contains lists of discurve topic',
+  title: "Birthday reminder",
+  demo: "https://prisca-birthday-app.netlify.app/",
+  code: 'https://github.com/ravinalamada/birthday-app',
+  image: _birthdayReminder.default,
+  description: "It is a website that are used to help people to remember their birthday if they don't remember it. ",
   type: 'js'
-}, {
-  id: '2',
-  title: "Movies",
-  demo: "https://awesome-bell-8933a4.netlify.app/",
-  code: '',
-  image: _movieList.default,
-  description: 'It is a website that contains list of great movies that are released in 2020',
-  type: 'react'
-}, {
-  id: '3',
-  title: "The Creativity crew",
-  demo: "https://wizardly-beaver-3a02b2.netlify.app/",
-  code: '',
-  image: _creativity.default,
-  description: 'It is a website that describes people who work in a team',
-  type: '#HTML #CSS #responsive'
-}, {
-  id: '4',
-  title: "Game landing",
-  demo: "https://ravinalamada.github.io/game-landing-page/",
-  image: _gameLanding.default,
-  description: 'It is a website that talks about talks about game which can be interested by people who loves playing game.',
-  type: '#HTML #CSS #responsive'
 }, {
   id: '5',
   title: "Photograph",
-  demo: "https://ravinalamada.github.io/front-end-finals/",
+  demo: "https://prisca-photograph.netlify.app/",
+  code: 'https://github.com/ravinalamada/front-end-finals',
   image: _photograph.default,
   description: 'It is a website that talks about photograph which shows many kinds of good pictures that have been taken.',
   type: '#HTML #CSS #responsive'
 }, {
   id: '6',
   title: "Sport app",
-  demo: "https://ravinalamada.github.io/front-end-assessment/",
-  code: '',
+  demo: "https://prisca-sport-app.netlify.app/",
+  code: 'https://ravinalamada.github.io/front-end-assessment/',
   image: _sportApp.default,
   description: 'It is a website that talks about sport which can be intesterd by sporty people.',
   type: '#HTML #CSS #responsive'
 }];
 var _default = Project;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./images/movie-list.png":"images/movie-list.png","./images/tea-time-topic.png":"images/tea-time-topic.png","./images/creativity.png":"images/creativity.png","./images/game-landing.png":"images/game-landing.png","./images/photograph.png":"images/photograph.png","./images/sport-app.png":"images/sport-app.png"}],"Components/Projects.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./images/birthday-reminder.png":"images/birthday-reminder.png","./images/photograph.png":"images/photograph.png","./images/sport-app.png":"images/sport-app.png"}],"Components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34202,9 +34168,9 @@ function Projects() {
   }, "Js")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     className: "projects__link",
     to: "/react"
-  }, "React")))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement("ul", {
+  }, "React")))), /*#__PURE__*/_react.default.createElement("ul", {
     className: "lists--container"
-  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/"
   }, fielteredHtml.map(function (item) {
@@ -34215,7 +34181,11 @@ function Projects() {
       className: "projects--img",
       src: item.image,
       alt: item.title
-    }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("p", null, item.description), /*#__PURE__*/_react.default.createElement("div", {
+    }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", {
+      className: "title"
+    }, item.title), /*#__PURE__*/_react.default.createElement("p", {
+      className: "description"
+    }, item.description), /*#__PURE__*/_react.default.createElement("div", {
       className: "link--container"
     }, /*#__PURE__*/_react.default.createElement("a", {
       className: "projects__link",
@@ -34313,7 +34283,7 @@ var _App = _interopRequireDefault(require("./Pages/App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Pages/App":"Pages/App.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Pages/App":"Pages/App.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -34341,7 +34311,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60233" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57620" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -34517,5 +34487,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/student-portfolio-template.e31bb0bc.js.map

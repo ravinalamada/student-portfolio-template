@@ -21,25 +21,40 @@ function Projects() {
           <li><Link className="projects__link" to='/react'>React</Link></li>
         </ul>
       </nav>
-    <Switch>
       <ul className="lists--container">
-        <Route exact path="/">
-            {fielteredHtml.map(item => (
-              <li key={item.id} className="item">
-              <img className='projects--img' src={item.image} alt={item.title} />
-              <div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <div className="link--container">
-                  <a className="projects__link" href={item.demo}>Demo</a>
-                  <a className="projects__link" href="">Code</a>
+        <Switch>
+          <Route exact path="/">
+              {fielteredHtml.map(item => (
+                <li key={item.id} className="item">
+                <img className='projects--img' src={item.image} alt={item.title} />
+                <div>
+                  <h3 className="title">{item.title}</h3>
+                  <p className="description">{item.description}</p>
+                  <div className="link--container">
+                    <a className="projects__link" href={item.demo}>Demo</a>
+                    <a className="projects__link" href="">Code</a>
+                  </div>
                 </div>
-              </div>
-              </li>
-            ))}
-          </Route>
-          <Route exact path="/js">
-              {fielteredJs.map(item => (
+                </li>
+              ))}
+            </Route>
+            <Route exact path="/js">
+                {fielteredJs.map(item => (
+                  <li key={item.id} className="item">
+                    <img className='projects--img' src={item.image} alt={item.title} />
+                    <div>
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                      <div>
+                        <a className="projects__link" href={item.demo}>Demo</a>
+                        <a className="projects__link" href="">Code</a>
+                      </div>
+                    </div>
+                  </li>
+                  ))}
+                </Route>
+              <Route exact path="/react">
+              {fielteredReact.map(item => (
                 <li key={item.id} className="item">
                   <img className='projects--img' src={item.image} alt={item.title} />
                   <div>
@@ -53,23 +68,8 @@ function Projects() {
                 </li>
                 ))}
               </Route>
-            <Route exact path="/react">
-            {fielteredReact.map(item => (
-              <li key={item.id} className="item">
-                <img className='projects--img' src={item.image} alt={item.title} />
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <div>
-                    <a className="projects__link" href={item.demo}>Demo</a>
-                    <a className="projects__link" href="">Code</a>
-                  </div>
-                </div>
-              </li>
-              ))}
-            </Route>
-          </ul>
-        </Switch>
+          </Switch>
+        </ul>
     </Router>
   )
 }

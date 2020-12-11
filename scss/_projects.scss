@@ -8,8 +8,12 @@
 
 .item {
   display: grid;
-  grid-template-columns: 20% 1fr;
-  gap: 40px;
+  grid-template-columns: 25% 1fr;
+  column-gap: 60px;
+}
+
+.title {
+  font-size: 30px;
 }
 
 .list--projects {
@@ -45,5 +49,12 @@
 
 .link--container {
   margin-top: 100px;
+}
+
+@media (min-width: 1000px) {
+
+  .description {
+    font-size: 20px;
+  }
 }
 
